@@ -17,13 +17,10 @@ public class IndexController {
      * 默认显示index界面
      * @return
      */
-    @GetMapping("/")
+    @GetMapping("/index")
     public String index(){
         return "index";
     }
-
-
-
 }
 
 
