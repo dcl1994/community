@@ -1,25 +1,27 @@
 package com.xiaolong.myblog.controller;
 
-import org.springframework.stereotype.Controller;
+import com.xiaolong.myblog.service.IndexRetryService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import javax.annotation.Resource;
 
 /**
+ *
  * @author xiaolong1994
- * @title: IndexController
- * @projectName market-goods
- * @description: TODO
- * @date 2020/6/512:00 PM
  */
-@Controller
+@RestController
 public class IndexController {
+
+    @Resource
+    private IndexRetryService indexRetryService;
 
     /**
      * 默认显示index界面
-     * @return
      */
     @GetMapping("/index")
-    public String index(){
-        return "index";
+    public void index() throws Exception {
+        int code = 0;
+        indexRetryService.getIndexCode(code);
     }
 }
 
