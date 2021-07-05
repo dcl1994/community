@@ -27,22 +27,22 @@ public class IndexController {
         indexRetryService.getIndexCode(code);
     }
 
-    public static void main(String[] args) {
-
-        List<String> list = Arrays.asList("a,b,c","1,2,3");
-        //将每个元素转成一个新的且不带逗号的元素
-        Stream<String> s1 = list.stream().map(s -> s.replaceAll(",",""));
-        s1.forEach(System.out::println);
-
-        Stream<String> s3 = list.stream().flatMap( s ->{
-            //将每个元素转换成一个steam
-            String[] split = s.split(",");
-            Stream<String> s2 = Arrays.stream(split);
-            return s2;
-        });
-
-
-    }
+//    public static void main(String[] args) {
+//
+//        List<String> list = Arrays.asList("a,b,c","1,2,3");
+//        //将每个元素转成一个新的且不带逗号的元素
+//        Stream<String> s1 = list.stream().map(s -> s.replaceAll(",",""));
+//        s1.forEach(System.out::println);
+//
+//        Stream<String> s3 = list.stream().flatMap( s ->{
+//            //将每个元素转换成一个steam
+//            String[] split = s.split(",");
+//            Stream<String> s2 = Arrays.stream(split);
+//            return s2;
+//        });
+//
+//
+//    }
 
 }
 
