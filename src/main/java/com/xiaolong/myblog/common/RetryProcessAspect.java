@@ -34,9 +34,7 @@ public class RetryProcessAspect {
             PreventSubmit retryProcess = methodSignature.getMethod().getAnnotation(PreventSubmit.class);
             if (atomicInteger.intValue() < retryProcess.value()) {
                 int i = atomicInteger.incrementAndGet();
-                System.out.println("打印i"+i);
                 Thread.sleep(retryProcess.sleep() * i);
-                System.out.println("开始重试第" + i + "次");
                 MethodInvocationProceedingJoinPoint methodPoint = ((MethodInvocationProceedingJoinPoint) point);
                 methodPoint.proceed();
             }
