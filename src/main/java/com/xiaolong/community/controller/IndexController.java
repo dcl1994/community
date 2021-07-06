@@ -18,10 +18,10 @@ public class IndexController {
      * 默认显示index界面
      */
     @GetMapping("/index")
-    public void index() throws Exception {
-        int code = 0;
-        indexRetryService.getIndexCode(code);
+    public String index(){
+        return "访问成功";
     }
+
 }
 
 
