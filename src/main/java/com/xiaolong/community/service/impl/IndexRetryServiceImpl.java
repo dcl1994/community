@@ -1,7 +1,7 @@
-package com.xiaolong.myblog.service.impl;
+package com.xiaolong.community.service.impl;
 
-import com.xiaolong.myblog.common.PreventSubmit;
-import com.xiaolong.myblog.service.IndexRetryService;
+import com.xiaolong.community.common.PreventSubmit;
+import com.xiaolong.community.service.IndexRetryService;
 import org.springframework.retry.annotation.Recover;
 import org.springframework.stereotype.Service;
 

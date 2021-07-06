@@ -1,4 +1,4 @@
-package com.xiaolong.myblog.common;
+package com.xiaolong.community.common;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -27,7 +27,7 @@ public class RetryProcessAspect {
      *  throwing:该属性指定一个形参名，用于表示Advice方法中可定义与此同名的形参，
      *  该形参可用于访问目标方法抛出的异常。
      */
-    @AfterThrowing(pointcut = ("@annotation(com.xiaolong.myblog.common.PreventSubmit)"))
+    @AfterThrowing(pointcut = ("@annotation(com.xiaolong.community.common.PreventSubmit)"))
      public void tryAgain(JoinPoint point) {
         try {
             MethodSignature methodSignature = (MethodSignature) point.getSignature();

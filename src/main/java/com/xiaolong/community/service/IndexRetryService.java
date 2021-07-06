@@ -1,4 +1,4 @@
-package com.xiaolong.myblog.service;
+package com.xiaolong.community.service;
 
 /**
  * 首页重试注解

@@ -1,4 +1,4 @@
-package com.xiaolong.myblog.common;
+package com.xiaolong.community.common;
 
 import java.lang.annotation.*;
 

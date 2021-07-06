@@ -1,6 +1,6 @@
-package com.xiaolong.myblog.controller;
+package com.xiaolong.community.controller;
 
-import com.xiaolong.myblog.service.IndexRetryService;
+import com.xiaolong.community.service.IndexRetryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;

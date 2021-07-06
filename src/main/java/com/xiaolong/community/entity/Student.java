@@ -1,4 +1,4 @@
-package com.xiaolong.myblog.entity;
+package com.xiaolong.community.entity;
 
 /**
  * 学生测试类
